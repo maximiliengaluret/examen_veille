@@ -55,6 +55,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Typography
 --------------------------------------------------------------*/
 //@import "typography/typography";
+$police: Arial;
+
+body {
+
+	font-family: $police;
+}
 
 /*--------------------------------------------------------------
 # Elements
@@ -63,71 +69,78 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 $couleur_rouge :rgb(223, 114, 114);
 $couleur_rose :rgb(255, 0, 221);
 $couleur_vert :rgb(62, 255, 44);
-$police: Montserrat;
+$couleur_Un :rgb(0, 138, 143);
+$couleur_Trois :rgb(0, 59, 61);
+$couleur_Deux :rgb(7, 0, 104);
+$couleur_Quatre :rgb(255, 250, 203);
 
-.flex:nth-of-type(2){
+.titre {
 
-margin: -222px 0px 0px 400px;
+	color: $couleur_rose;
+}
+
+.flex:nth-of-type(2) {
+
+	margin: -222px 0px 0px 400px;
 
 }
 
-.flex:nth-of-type(3){
+.flex:nth-of-type(3) {
 
 	margin: -222px 0px 0px 800px;
-	
+
 }
 
-.conteneur{
+.conteneur {
 
 	float: right;
 	float: right;
-    width: 88%;
-    margin-top: -25px;
+	width: 88%;
+	margin-top: -25px;
 }
 
-.image{
-float: left;
+.image {
+	float: left;
 
 }
 
-.sess{
+.sess {
 
-color: red;
+	color: red;
 }
 
-.dom{
+.dom {
 
 
-		color: rgb(9, 255, 0);
-		
+	color: rgb(9, 255, 0);
+
 }
 
 a:active {
 	color: $couleur_vert;
-  }
-  
-  a:focus {
+}
+
+a:focus {
 	color: $couleur_rouge;
-  }
-  
-  a:hover {
+}
+
+a:hover {
 	color: $couleur_rose;
-  }
+}
 
-  .grid-container{
-    display: grid;
-    grid-template-columns: 5;
-    grid-template-columns: 100px 100px 100px 100px 100px;
-    grid-template-rows: 6;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+.grid-container {
+	display: grid;
+	grid-template-columns: 5;
+	grid-template-columns: 100px 100px 100px 100px 100px;
+	grid-template-rows: 6;
+	grid-template-rows: 100px 100px 100px 100px 100px 100px;
 	padding: 10px;
+	background-color: $couleur_Quatre;
+}
 
-
-  }
-
-  a{
+a {
 	border: 1px solid black;
-  }
+}
 
 /*--------------------------------------------------------------
 # Forms
@@ -139,7 +152,7 @@ a:active {
 --------------------------------------------------------------*/
 //@import "navigation/navigation";
 
-.menu-menu-container ul li a{
+.menu-menu-container ul li a {
 
 	color: blue($color: #6bbcff);
 	font-size: 2em;
