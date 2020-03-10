@@ -19,7 +19,7 @@ get_header();
        
 			<header class="page-header">
 
-            <h1>Question 1</h1>
+            <h1>Question 2</h1>
  
                 <?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );

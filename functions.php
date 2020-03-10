@@ -28,3 +28,23 @@ function extraire_date( $query ) {
     }
  }
  add_action( 'pre_get_posts', 'extraire_date' );
+
+
+
+/*Examen Veille Technologique*/ 
+
+
+ /* 
+ Question 2 - Fonction qui permet de trier les cours en ordre ASCENDANT
+ Modifier le contenu du thème pour que le modèle de la question précédente affiche l’ensemble des cours en ordre alphabétique.
+ Optimiser la façon dont cette requête sera exécutée   
+ */
+
+function extraire_cours( $query ) {
+    if ($query->is_category('cours'))
+    {
+       $query->set( 'posts_per_page', -1 );
+       $query->set( 'order', 'asc' );
+    }
+ }
+ add_action( 'pre_get_posts', 'extraire_cours' );
