@@ -60,6 +60,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Elements
 --------------------------------------------------------------*/
 //@import "elements/elements";
+$couleur_rouge :rgb(223, 114, 114);
+$couleur_rose :rgb(255, 0, 221);
+$couleur_vert :rgb(62, 255, 44);
+$police: Montserrat;
 
 .flex:nth-of-type(2){
 
@@ -86,6 +90,30 @@ float: left;
 
 }
 
+.sess{
+
+color: red;
+}
+
+.dom{
+
+
+		color: rgb(9, 255, 0);
+		
+}
+
+a:active {
+	color: $couleur_vert;
+  }
+  
+  a:focus {
+	color: $couleur_rouge;
+  }
+  
+  a:hover {
+	color: $couleur_rose;
+  }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -95,6 +123,12 @@ float: left;
 # Navigation
 --------------------------------------------------------------*/
 //@import "navigation/navigation";
+
+.menu-menu-container ul li a{
+
+	color: blue($color: #6bbcff);
+	font-size: 2em;
+}
 
 /*--------------------------------------------------------------
 # Accessibility
